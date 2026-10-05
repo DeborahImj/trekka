@@ -75,7 +75,7 @@ a {
   display: flex;
   justify-content: space-between;
   left: 0;
-  padding: 1.5rem 2rem;
+  padding: 1.25rem 2rem;
   position: fixed;
   right: 0;
   width: 100%;
@@ -88,7 +88,7 @@ a {
 .nav-logo {
   align-items: center;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 .nav-logo img {
@@ -96,15 +96,54 @@ a {
 }
 
 .nav-logo p {
-  font-size: 1.75rem;
+  font-size: 2rem;
   font-weight: 700;
 }
 
 .nav-links {
   align-items: center;
   display: flex;
+  gap: 2.5rem;
   justify-content: flex-end;
 }
+
+.nav-links a {
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-links a:hover {
+  transform: scale(1.1);
+}
+
+.nav-calls {
+  align-items: center;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: flex-end;
+}
+
+.nav-cta {
+  border: 0.1rem solid var(--color-dark-green);
+  border-radius: 2rem;
+  padding: 0.75rem 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-cta:hover {
+  background: var(--color-dark-green);
+  color: var(--color-mint-green);
+}
+
+.nav-cta.fill {
+  background: var(--color-dark-green);
+  color: var(--color-mint-green);
+}
+
+.nav-cta.fill:hover {
+  background: transparent;
+  color: var(--color-dark-green);
+}
+
 
 /******************************************
 /* ADDITIONAL STYLES
