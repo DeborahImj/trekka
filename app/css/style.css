@@ -79,6 +79,7 @@ a {
   position: fixed;
   right: 0;
   width: 100%;
+  z-index: 20;
 }
 
 .navbar a {
@@ -146,7 +147,7 @@ a {
 
 .nav-burger {
   align-items: center;
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.4rem;
   height: 2rem;
@@ -156,27 +157,50 @@ a {
 .nav-burger span {
   background: var(--color-dark-green);
   height: 0.15rem;
-  transition: transform 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
   transform-origin: center;
   width: 2.5rem;
 }
 
-.nav-burger span.top {
-  transform: translateY(0.45rem) rotate(45deg);
+.nav-burger.active span.top {
+  transform: translateY(0.55rem) rotate(45deg);
 }
 
-.nav-burger span.middle {
+.nav-burger.active span.middle {
   opacity: 0;
 }
 
-.nav-burger span.bottom {
-  transform: translateY(-0.45rem) rotate(-45dreg);
+.nav-burger.active span.bottom {
+  transform: translateY(-0.55rem) rotate(-45deg);
 }
 
 .nav-menu {
+  background: var(--color-mint-green);
+  border-radius: 0 0 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   left: 0;
+  padding: 5rem 2rem 3rem 2rem;
   position: fixed;
   top: -100vh;
+  transition: all 0.5s ease-in-out;
+  width: 100%;
+  z-index: 10;
+}
+
+.nav-menu.active {
+  top: 0;
+}
+
+.nav-menu a {
+  color: var(--color-dark-green);
+  font-size: 1.25rem;
+}
+
+.nav-menu-calls {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 800px) {
@@ -191,6 +215,9 @@ a {
   }
   .nav-links {
     display: none;
+  }
+  .nav-burger {
+    display: flex;
   }
 }
 
