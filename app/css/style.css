@@ -267,7 +267,7 @@ a {
 }
 
 .home-left {
-  width: calc(45% - 1rem);
+  width: calc(50% - 1rem);
 }
 
 .home-left h1 {
@@ -278,7 +278,25 @@ a {
 
 .home-left p {
   font-size: 1.4rem;
-  line-height: 2rem;
+  line-height: 2.15rem;
+  margin: 0 0 2.5rem 0;
+}
+
+.home-left a {
+  background: var(--color-mint-green);
+  border: 0.1rem solid var(--color-mint-green);
+  border-radius: 2rem;
+  color: var(--color-dark-green);
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.home-left a:hover {
+  background: var(--color-dark-green);
+  color: var(--color-mint-green);
 }
 
 .home-right {
@@ -287,10 +305,42 @@ a {
 
 .home-section img {
   border-radius: 2rem;
-  height: 30rem;
+  height: 31.5rem;
   object-fit: cover;
   object-position: center;
   width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .home-section {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: flex-start;
+    padding: 8.5rem 1.75rem 3rem 1.75rem;
+  }
+  .home-left {
+    width: 100%;
+  }
+  .home-left h1 {
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+  }
+  .home-left p {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    margin: 0 0 2rem 0;
+  }
+  .home-left a {
+    font-size: 1rem;
+    padding: 0.85rem 1.75rem;
+  }
+  .home-right {
+    width: 100%;
+  }
+  .home-right img {
+    height: 25rem;
+  }
 }
 
 /******************************************
