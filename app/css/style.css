@@ -21,20 +21,57 @@
 /* BASE STYLES
 /*******************************************/
 
-body {
-
+:root {
+  --color-dark-green: #232E26;
+  --color-mint-green: #D9EFDE;
 }
 
+body {
+  background: var(--color-dark-green);
+  color: var(--color-mint-green);
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--color-mint-green);
+  text-decoration: none;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
-header {
 
+/* NAVBAR */
+
+.navbar {
+  align-items: center;
+  background: var(--color-mint-green);
+  border-radius: 2rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 2rem;
+  position: fixed;
+  width: 100%;
 }
 
-footer {
+.navbar a {
+  color: var(--color-dark-green);
+}
 
+.nav-logo {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.nav-logo img {
+  width: 2.5rem;
 }
 
 /******************************************
