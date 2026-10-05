@@ -3,6 +3,7 @@
 
 const navBurger = document.querySelector('#navBurger');
 const navMenu = document.querySelector('#navMenu');
+const navMenuLinks = document.querySelectorAll('.nav-menu-link');
 
 navBurger.addEventListener('click', toggleNavMenu);
 
@@ -10,3 +11,5 @@ function toggleNavMenu() {
   navBurger.classList.toggle('active');
   navMenu.classList.toggle('active');
 }
+
+Array.from(navMenuLinks).forEach(elememt => elememt.addEventListener('click', toggleNavMenu));

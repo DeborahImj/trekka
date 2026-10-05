@@ -42,6 +42,10 @@
   --color-mint-green: #D9EFDE;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: var(--color-dark-green);
   color: var(--color-mint-green);
@@ -181,7 +185,7 @@ a {
   flex-direction: column;
   gap: 2rem;
   left: 0;
-  padding: 5rem 2rem 3rem 2rem;
+  padding: 6rem 2rem 2rem 2rem;
   position: fixed;
   top: -100vh;
   transition: all 0.5s ease-in-out;
@@ -196,11 +200,40 @@ a {
 .nav-menu a {
   color: var(--color-dark-green);
   font-size: 1.25rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu a:hover {
+  transform: scale(1.05);
 }
 
 .nav-menu-calls {
   display: flex;
   flex-direction: column;
+  gap: 1.5rem;
+}
+
+.nav-menu-cta {
+  border: 0.1rem solid var(--color-dark-green);
+  border-radius: 2rem;
+  display: block;
+  padding: 0.75rem 0;
+  text-align: center;
+}
+
+.nav-menu-cta:hover {
+  background: var(--color-dark-green);
+  color: var(--color-mint-green);
+}
+
+.nav-menu-cta.fill {
+  background: var(--color-dark-green);
+  color: var(--color-mint-green);
+}
+
+.nav-menu-cta.fill:hover {
+  background: var(--color-mint-green);
+  color: var(--color-dark-green);
 }
 
 @media screen and (max-width: 800px) {
@@ -221,6 +254,12 @@ a {
   }
 }
 
+
+/* HOME SECTION */
+
+.home-section {
+  scroll-margin-top: 6rem;
+}
 
 /******************************************
 /* ADDITIONAL STYLES
