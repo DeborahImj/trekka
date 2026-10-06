@@ -289,7 +289,6 @@ a {
   color: var(--color-dark-green);
   display: inline-block;
   font-size: 1.25rem;
-  font-weight: 700;
   padding: 1rem 2rem;
   transition: all 0.3s ease-in-out;
 }
@@ -380,7 +379,6 @@ a {
   color: var(--color-mint-green);
   display: inline-block;
   font-size: 1rem;
-  font-weight: 700;
   padding: 0.75rem 2rem;
   transition: all 0.3s ease-in-out;
 }
@@ -598,7 +596,6 @@ a {
   color: var(--color-dark-green);
   display: inline-block;
   font-size: 1.25rem;
-  font-weight: 700;
   padding: 0.75rem 2rem;
   transition: all 0.3s ease-in-out;
 }
@@ -606,6 +603,23 @@ a {
 .review-cta:hover {
   background: transparent;
   color: var(--color-mint-green);
+}
+
+@media screen and (max-width: 800px) {
+  .reviews-section {
+    padding: 7rem 1.75rem 5rem 1.75rem;
+  }
+  .review-title {
+    font-size: 1.05rem;
+  }
+  .review-desc {
+    font-size: 2rem;
+    margin: 1.5rem 0 1.5rem 0;
+    width: 100%;
+  }
+  .review-author {
+    font-size: 1.25rem;
+  }
 }
 
 /******************************************
