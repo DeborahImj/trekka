@@ -468,7 +468,52 @@ a {
 
 .about-desc-sub {
   font-size: 1.5rem;
-  margin: 0 0 4.5rem 0;
+  margin: 0 0 6rem 0;
+}
+
+.about-footer {
+  font-size: 1.3rem;
+  margin: 0 0 3rem 0;
+  text-align: center;
+}
+
+.about-brands {
+  align-items: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.about-brands img {
+  width: 6rem;
+}
+
+@media screen and (max-width: 800px) {
+  .about-section {
+    padding: 4.5rem 1.75rem 5rem 1.75rem;
+  }
+  .about-title {
+    font-size: 1rem;
+  }
+  .about-desc {
+    font-size: 1.75rem;
+    line-height: 2.25rem;
+    margin: 1.5rem 0 1rem 0;
+  }
+  .about-desc-sub {
+    font-size: 1.125rem;
+  }
+  .about-footer {
+    font-size: 1rem;
+    margin: 0 0 1.75rem 0;
+  }
+  .about-brands {
+    flex-wrap: wrap;
+    gap: 3rem;
+  }
+  .about-brands img {
+    width: 4.5rem;
+  }
 }
 
 /******************************************
