@@ -525,15 +525,44 @@ a {
 
 .showcase-section {
   background: var(--color-mint-green);
+  border-radius: 2.25rem;
   color: var(--color-dark-green);
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 4rem 1.5rem 1.5rem 1.5rem;
   text-align: center;
 }
 
 .showcase-section h2 {
-  font-size: 2.75rem;
-  margin: 0 auto 0 auto;
+  font-size: 2.6rem;
+  line-height: 3.25rem;
+  margin: 0 auto 2.5rem auto;
   width: 50%;
+}
+
+.showcase-section img {
+  border-radius: 2rem;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .showcase-section {
+    padding: 4rem 1.25rem 1.25rem 1.25rem;
+  }
+  .showcase-section h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    width: 75%;
+  }
+  .showcase-section img {
+    border-radius: 2.25rem;
+    height: 22.5rem;
+  }
+}
+
+
+.reviews-section {
+  scroll-margin-top: 6rem;
 }
 
 /******************************************
