@@ -262,7 +262,7 @@ a {
   display: flex;
   gap: 2rem;
   justify-content: space-between;
-  padding: 12.5rem 5rem 3rem 5rem;
+  padding: 12.5rem 5rem 5rem 5rem;
   scroll-margin-top: 6rem;
 }
 
@@ -347,7 +347,67 @@ a {
 /* FEATURES SECTION */
 
 .features-section {
+  align-items: flex-start;
+  background: var(--color-mint-green);
+  border-radius: 2rem;
+  color: var(--color-dark-green);
+  display: flex;
+  gap: 2rem;
+  padding: 4.5rem 5rem 3rem 5rem;
   scroll-margin-top: 6rem;
+}
+
+.features-left {
+  width: calc(30% - 1rem);
+}
+
+.features-left span {
+  font-size: 1rem;
+}
+
+.features-left h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 3.25rem;
+  margin: 1.5rem 0 2rem 0;
+}
+
+.features-left a {
+  background: var(--color-dark-green);
+  border: 0.1rem solid var(--color-dark-green);
+  border-radius: 2rem;
+  color: var(--color-mint-green);
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.features-left a:hover {
+  background: var(--color-mint-green);
+  color: var(--color-dark-green);
+}
+
+.features-right {
+  align-items: flex-start;
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  width: calc(70% - 1rem);
+}
+
+.feature-card {
+  width: calc(33.333% - 2rem);
+}
+
+.feature-card img {
+  border-radius: 1rem;
+  height: 20rem;
+  object-fit: cover;
+  object-position: center;
+  margin: 0 0 1rem 0;
+  width: 100%;
 }
 
 /******************************************
