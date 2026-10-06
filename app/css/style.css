@@ -490,7 +490,7 @@ a {
 
 @media screen and (max-width: 800px) {
   .about-section {
-    padding: 4.5rem 1.75rem 5rem 1.75rem;
+    padding: 4.5rem 1.75rem 4.5rem 1.75rem;
   }
   .about-title {
     font-size: 1rem;
@@ -509,11 +509,31 @@ a {
   }
   .about-brands {
     flex-wrap: wrap;
-    gap: 3rem;
+    gap: 2.75rem;
+    width: 95%;
   }
   .about-brands img {
-    width: 4.5rem;
+    width: 4rem;
   }
+  .about-brands img.pacific {
+    width: 6rem;
+  }
+}
+
+
+/* SHOWCASE SECTION */
+
+.showcase-section {
+  background: var(--color-mint-green);
+  color: var(--color-dark-green);
+  padding: 4rem 1rem 1rem 1rem;
+  text-align: center;
+}
+
+.showcase-section h2 {
+  font-size: 2.75rem;
+  margin: 0 auto 0 auto;
+  width: 50%;
 }
 
 /******************************************
