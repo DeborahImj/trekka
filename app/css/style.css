@@ -528,7 +528,9 @@ a {
   border-radius: 2.25rem;
   color: var(--color-dark-green);
   padding: 4rem 1.5rem 1.5rem 1.5rem;
+  position: relative;
   text-align: center;
+  z-index: 5;
 }
 
 .showcase-section h2 {
@@ -561,8 +563,49 @@ a {
 }
 
 
+/* REVIEWS SECTION */
+
 .reviews-section {
+  background-image: url('../assets/images/review-bg.webp');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: -2.5rem 0 0 0;
+  padding: 7.5rem 5rem 5rem 5rem;
   scroll-margin-top: 6rem;
+}
+
+.review-title {
+  font-size: 1.25rem;
+}
+
+.review-desc {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 1.5rem 0 1.75rem 0;
+  width: 70%;
+}
+
+.review-author {
+  font-size: 1.75rem;
+  margin: 0 0 3rem 0;
+}
+
+.review-cta {
+  background: var(--color-mint-green);
+  border: 0.1rem solid var(--color-mint-green);
+  border-radius: 2rem;
+  color: var(--color-dark-green);
+  display: inline-block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.review-cta:hover {
+  background: transparent;
+  color: var(--color-mint-green);
 }
 
 /******************************************
