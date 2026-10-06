@@ -422,15 +422,36 @@ a {
 
 @media screen and (max-width: 800px) {
   .features-section {
-    padding: 4rem 1.75rem 4rem 1.75rem;
+    gap: 2.75rem;
+    padding: 4rem 1.75rem 4.5rem 1.75rem;
     flex-direction: column;
   }
   .features-left {
     width: 100%;
   }
-  .features-right {
+  .features-left h2 {
+    margin: 1.25rem 0 1.5rem 0;
     width: 100%;
   }
+  .features-right {
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .feature-card {
+    width: 100%;
+  }
+  .feature-card img {
+    height: 22.5rem;
+    margin: 0 0 1.5rem 0;
+  }
+}
+
+
+/* ABOUT SECTION */
+
+.about-section {
+  scroll-margin-top: 6rem;
 }
 
 /******************************************
