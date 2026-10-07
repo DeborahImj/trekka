@@ -56,7 +56,7 @@ body {
   padding: 0;
 }
 
-h1, h2, h3, h4, h5, p, ul, li {
+h1, h2, h3, h4, h5, p, ul, li, main {
   margin: 0;
   padding: 0;
 }
@@ -709,6 +709,15 @@ a {
   .contact-success-p {
     font-size: 1.5rem;
   }
+}
+
+
+/* FOOTER SECTION */
+
+.footer-section {
+  border-top: 0.1rem solid var(--color-mint-green);
+  padding: 1rem 5rem 1rem 5rem;
+  scroll-margin-top: 6rem;
 }
 
 /******************************************
