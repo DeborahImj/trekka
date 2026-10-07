@@ -622,6 +622,28 @@ a {
   }
 }
 
+
+/* CONTACT SECTION */
+
+.contact-section {
+  padding: 6rem 5rem;
+  scroll-margin-top: 6rem;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 1.25rem;
+}
+
+.contact-h2 {
+  font-size: 4rem;
+  margin: 2rem 0 2rem 0;
+}
+
+.contact-form input {
+  border-width: 
+}
+
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
