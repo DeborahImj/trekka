@@ -637,7 +637,14 @@ a {
 
 .contact-h2 {
   font-size: 4rem;
-  margin: 2rem 0 2rem 0;
+  margin: 2rem 0 4rem 0;
+}
+
+.contact-form-body {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 3rem 0;
 }
 
 .contact-form input {
@@ -646,10 +653,12 @@ a {
   border-style: solid;
   border-width: 0 0 0.1rem 0;
   margin: 0 1rem 0 0;
+  padding: 0 5rem 1rem 1.5rem;
 }
 
 .contact-form input::placeholder {
   color: var(--color-mint-green);
+  font-size: 1.35rem;
 }
 
 .contact-form button {
@@ -666,6 +675,14 @@ a {
 .contact-form button:hover {
   background: var(--color-mint-green);
   color: var(--color-dark-green);
+}
+
+.contact-p {
+  font-size: 1.35rem;
+}
+
+.contact-success-p {
+  font-size: 1.75rem;
 }
 
 /******************************************

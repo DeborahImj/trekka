@@ -13,3 +13,15 @@ function toggleNavMenu() {
 }
 
 Array.from(navMenuLinks).forEach(elememt => elememt.addEventListener('click', toggleNavMenu));
+
+// CONTACT FORM
+
+const contactForm = document.getElementById('waitlistForm');
+const successMessage = document.getElementById('formSuccess');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  contactForm.style.display = 'none';
+  successMessage.hidden = false;
+});
+
