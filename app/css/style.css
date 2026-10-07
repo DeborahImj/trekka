@@ -641,7 +641,31 @@ a {
 }
 
 .contact-form input {
-  border-width: 
+  background: transparent;
+  border-color: var(--color-mint-green);
+  border-style: solid;
+  border-width: 0 0 0.1rem 0;
+  margin: 0 1rem 0 0;
+}
+
+.contact-form input::placeholder {
+  color: var(--color-mint-green);
+}
+
+.contact-form button {
+  background: var(--color-dark-green);
+  border: 0.1rem solid var(--color-mint-green);
+  border-radius: 2rem;
+  color: var(--color-mint-green);
+  display: inline-block;
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact-form button:hover {
+  background: var(--color-mint-green);
+  color: var(--color-dark-green);
 }
 
 /******************************************
